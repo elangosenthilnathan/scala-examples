@@ -21,7 +21,7 @@
             distribution: 'adopt'
         
         - name: Run tests
-          run: sbt test  
+          run: sbt run  
   
         - name: Download ShiftLeft CLI
           run: |
