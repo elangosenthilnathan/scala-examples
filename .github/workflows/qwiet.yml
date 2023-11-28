@@ -26,8 +26,7 @@
         - name: Download ShiftLeft CLI
           run: |
             curl https://cdn.shiftleft.io/download/sl > ${GITHUB_WORKSPACE}/sl && chmod a+rx ${GITHUB_WORKSPACE}/sl
-            find . -type f | grep jar
-            find . -type f | grep war
+            find . -type f | grep -E 'jar|war'
   
         - name: Download bestfix script
           shell: bash
